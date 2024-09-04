@@ -1,5 +1,7 @@
 # 3D Raycasting Simulation in Pygame
 
+![Alt Text](screenshot.png)
+
 This project is a 3D raycasting simulation built using Pygame, a popular Python library for game development. The simulation provides a visual representation of a simple 2D environment viewed through a first-person perspective. It uses raycasting to compute the distances from the player's position to walls in the scene, rendering a 3D-like view of the environment.
 
 ## Features
