@@ -1,6 +1,7 @@
 import pygame
 import math
 import random
+import uuid
 
 
 def create_walls(max_width:int, max_height:int, number_of_walls:int=10) -> list:
@@ -84,6 +85,11 @@ def main():
                     case pygame.K_w: walls = create_walls(width, height, number_of_walls)
                     case pygame.K_a: view_direction = (view_direction - 1) % 360
                     case pygame.K_d: view_direction = (view_direction + 1) % 360
+                    case pygame.K_SPACE:
+                        id = uuid.uuid4()
+                        screenshot_filename = f"screenshot_{id}.png"
+                        pygame.image.save(screen, screenshot_filename)
+                        print(f"Screenshot saved as {screenshot_filename}")
                     
         print(view_direction)
                     
